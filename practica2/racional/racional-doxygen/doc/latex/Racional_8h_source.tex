@@ -1,0 +1,66 @@
+\doxysection{Racional.\+h}
+\textbf{ Ir a la documentación de este archivo.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef \_\_RACIONAL}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define \_\_RACIONAL}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{30 \textcolor{keyword}{class }Racional \{}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32  \textcolor{keyword}{private}:}
+\DoxyCodeLine{48   \textcolor{keywordtype}{int} num; }
+\DoxyCodeLine{49   \textcolor{keywordtype}{int} den; }
+\DoxyCodeLine{51  \textcolor{keyword}{public}:}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{56   Racional();}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{65   Racional(\textcolor{keywordtype}{int} n, \textcolor{keywordtype}{int} d);  }
+\DoxyCodeLine{66   \textcolor{comment}{// Racional(int n=0, int d=1): num(n),den(d) \{\}}}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{73   Racional (\textcolor{keyword}{const} Racional\& c);  }
+\DoxyCodeLine{74 }
+\DoxyCodeLine{79   \textcolor{keywordtype}{int} numerador ();}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{85   \textcolor{keywordtype}{int} denominador();}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{94   \textcolor{keywordtype}{void} asignar(\textcolor{keywordtype}{int} n, \textcolor{keywordtype}{int} d);}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{103   \textcolor{keywordtype}{bool} comparar(Racional r);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{108   \textcolor{keywordtype}{void}  print();}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{114   Racional operator+(\textcolor{keyword}{const} Racional \& r);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{120   Racional operator*(\textcolor{keyword}{const} Racional \& r);}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122   }
+\DoxyCodeLine{127   \textcolor{keywordtype}{void} operator+=(\textcolor{keyword}{const} Racional \&r);}
+\DoxyCodeLine{128   }
+\DoxyCodeLine{134   \textcolor{keywordtype}{bool} operator ==(\textcolor{keyword}{const} Racional \&r);}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{143   \textcolor{keyword}{friend} ostream\& operator<< (ostream\& os, \textcolor{keyword}{const} Racional\& r);}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{153   \textcolor{keyword}{friend} istream\& operator>> (istream\& is, Racional\& r);}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{158   Racional  simplifica();}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{165 \textcolor{comment}{/************* INCLUIR OTRAS FUNCIONES y OPERADORES *********/}}
+\DoxyCodeLine{166 }
+\DoxyCodeLine{167 \textcolor{comment}{/* Por ejemplo:}}
+\DoxyCodeLine{168 \textcolor{comment}{   la funcion irreducible que nos convierta un racional r}}
+\DoxyCodeLine{169 \textcolor{comment}{   en irreducible, ej. 12/4 -\/> 3/1}}
+\DoxyCodeLine{170 \textcolor{comment}{   la funcion real que devuelva el valor real asociado al racional}}
+\DoxyCodeLine{171 \textcolor{comment}{   ej, 1/2 -\/> 0.5}}
+\DoxyCodeLine{172 \textcolor{comment}{}}
+\DoxyCodeLine{173 \textcolor{comment}{   Operador de resta, multiplicacion, division,etc.  }}
+\DoxyCodeLine{174 \textcolor{comment}{*/}}
+\DoxyCodeLine{175  }
+\DoxyCodeLine{176 \};}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
