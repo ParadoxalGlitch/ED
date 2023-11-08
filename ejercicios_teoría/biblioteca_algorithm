@@ -1,0 +1,55 @@
+#include <algorithm>
+
+
+
+// all_of: Comprueba si todos los elementos de una secuencia cumplen una condición (  En los examenes no lo dejan :(  )
+// any_of: Comprueba si almenos un elemento de una secuencia cumple una condición
+
+
+// sort: Ordena los elementos en una secuencia según un criterio
+// min_element / max_element: Obtiene el valor mínimo/máximo de una secuenia según un criterio
+
+
+// set_union, set_intersection, set_difference: Realiza sobre dos secuencias las operaciones de union (U), interseccion(∩), y diferencia (-)
+// merge
+
+
+//STL
+
+//Conjunto set #include <set>: Se ordena automaticamente y no puede haber más de una cosa repetida.
+// emplace (Inserta el elemento si no existe ya, construyendo el objeto)
+// emplace_hit (Lo mismo que emplace pero se le pasa un iterador para saber donde buscar para insertarlo)
+// empty, erase, find, insert, size
+// equal_range: devuelve dos iteradres. El primero a la primera posicion que coincide con el valor de entrada y
+// el segundo al que es estrictamente mayor
+// swap: intercambia el contenido de un set por otro
+// value_comp
+// iteradores, bi-direccionales, reverse y constantes
+
+
+
+//Multiconjunto (Multiset) Son contenedores que almacenan elementos repetidos de un tipo base de forma ordenada.
+// EL valor de un elemento en el conjunto se denomina llave (key). Todos los métodos de set están en multiset
+// count -> devuelve el numero de veces que está el elemento
+// ¿? upper_bound o algo asi. Parece que salta justo al siguiente elemento distinto
+// equal_range -> pone un iterador en el primer elemento que se pide que coincide y el otro en el primer elemento estrictamente mayor
+// (si no existe el valor, devuelve el del valor anterior y el del valor siguiente)
+
+
+
+//Maps (map) Son contenedores que almacenan pares formados por un valor clave y un valor asociado.
+//Biblioteca: map Nombre de la clase: map (claves no repetidas) multimap (admite claves repetidas)
+// count devuelve el numero de elementos con ese numero de clave
+
+// Operaciones:: clear, count, emplace, emplace_hit, etc.... (ver diapositivas)
+
+// Doble (deque), es como un vector pero más eficiente en cuanto a inserciones y borrados por los extremos
+// Operaciones: push_back, push_front, pop_back, pop_front, front, back, size, insert, erase
+// Biblioteca: queue
+
+
+
+
+// Forward List: Son contenedores que permiten insertar y borrar en cualquier punto de la secuencia.
+// la cosa es que estas celdas enlazadas solo tienen un enlace al siguiente elemento.
+// No tiene la funcion size. La inserción se hace desde la celda anterior (insert_after/erase_after)

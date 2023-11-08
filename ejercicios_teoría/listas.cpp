@@ -59,3 +59,20 @@ p->ant = nueva;
 //Swap Intercambiar elementos entre listas
 
 //Clear borra el contenido de la lista sin eliminar el elemento
+
+
+
+
+
+// Splice: (Posicion_destino, ListaOrigen, pos1, pos2): Corta un trozo del vector indicado por los parametros 2 3 y 4, y lo pega en el parametro 1
+
+
+
+// Merge: mezcla dos listas (deben estar ordenadas con anterioridad) con respecto a un criterio establecido (FUNCTORES)
+// Reverse: Invierte la lista 
+
+
+
+
+
+

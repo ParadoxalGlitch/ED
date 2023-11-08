@@ -1,0 +1,142 @@
+Arbol: un arbol es un grafo acilico donde cada nodo tiene grado
+de entrada 1 (excepto la raiz), y grado de salida 0 o más.
+Raiz: Nodo inicial
+Hojas: Nodo final 
+
+Camino en un arbol: 
+Ancestros: EL nodo ni es ancestro del nj, si hay un camino donde
+se pase por ambos y se pase por ni antes que por nj.
+
+Altura de un nodo: la longitud del camino mas largo desde el nodo ni y una hoja.
+Profundidad de un nodo: Longitud del camino entre la raiz y el nodo ni. La profundidad de una raiz es 0
+Niveles: Si un arbol tiene altura h, el numero de niveles es h+1
+El nivel 0 contiene la raiz, el 1 los descendientes de la raiz, el nivel 2, los nietos de la raiz, etc...
+
+
+Arbol binario: Un arbol en el que cada nodo puede tener 0, 1 o 2 hijos.EL arbol vacio es un arbol binario
+
+    Binario homogéneo: Cada nodo tiene 0 o 2 hijos
+    Binarios completos: Tiene todos los niveles completos menos el ultimo,
+                        en el que todos los nodos están empujados a la izquierda
+
+
+Recorrer Árboles:
+    -Recorrido en profundidad
+        .Recorrido prefijo, infijo, postfijo
+    -Recorrido por Niveles
+
+
+
+    -Recorrido Prefijo o Preorden: (imagen en pdf)
+
+
+        Primero se lista la raiz, luego el Preoden de b Pre(b), luego Pre(c) y luego Pre(d)
+
+    Pre(a) -> a 
+              Pre(b) -> b
+                        Pre(e) -> e
+                        Pre(f) -> f 
+              Pre(c) -> c 
+                        Pre(g) -> g
+                        Pre(h) -> h
+                                  Pre(i) -> i
+              Pre(d) -> d
+
+              Al final queda: a,b,e,f,c,g,h,i,d ( revisar )
+
+
+    -Recorrido infijo o Postorden: 
+
+    Primero se saca el primer hijo de la raiz, luego el primer hijo del hijo de la raiz, etc... luego la raiz, y luego el resto de hijos.
+
+    e,b,f,a,g,c,i,h,de
+
+
+    -Recorrido postfijo o postorden
+
+    Se van sacando los hijos por orden de izquierda a derecha y profundidad, y luego la raiz
+
+    e,f,b,g,i,h,c,d,a
+
+
+    -Recorrido por nivel:
+
+    Leer los niveles de izquierda a derecha de menor a mayor
+
+
+
+
+    /***********************/
+    Recorridos pero con Árboles
+    /***********************/
+
+
+    // Recorrido prefijo (ver pdf para imagen)
+
+
+    Primero se lista la raiz, luego vamos recorriendo cada rama hasta el final de izquierda a derecha, de arriba abajo.
+    8,4,2,6,5,12,15,14
+
+
+    // Recorrido infijo:
+
+    Primero se lista la hoja de la primera raiz de la izquierda, luego su padre y luego el resto de hijos de dicho padre, en orden
+    ascendente siempre. Se repite esta mecánica con el resto de hijos/padres de izquierda a derecha
+
+    2,4,5,6,8,12,15,14 !!!! Al ser arbol binario, cuando solo hay 1 hijo hay q fijarse en si está a la izquierda o a la derecha.
+                            Si está a la derecha, se listará primero al padre (es como si intentase listar al hijo de la izquierda pero no hay)
+                        
+
+
+    //Postfijo: Se van listando las hojas de izquierda a derecha, en orden ascendente. Primero hojas -> luego padres -> luego raiz
+    2,5,6,4,14,15,12,8
+
+
+    // Recorrido por niveles: recorrer del nivel 0 al último (Trivial), de izquierda a derecha (aun mas trivial)
+
+    8,4,12,2,6,15,5,14
+
+
+    /***CONCEPTOS GENERALES***/
+
+    Un arbol con uno solo de sus recorridos no se puede recuperar
+
+    Una rotación de dicho arbol genera el mismo inorden.
+
+
+    EJERCICIO:
+
+    ver pdf
+
+    EJERCICIO 2:
+
+    rehacer un arbol apartir del preorden o inorden: ( ver pdf)
+
+
+    PREORDEN: G E A I B M C L D F K J H 
+    INORDEN: I A B E G L D C F M K H J
+
+
+                        G
+                       / \
+                      E   M 
+                     /   / \
+                    A   C   K
+                   / \ / \   \
+                  I  B L  F   J
+                        \    /
+                         D  H
+
+    /***Escritura de un arbol en disco***/
+
+
+    (ver pdf)
+
+    A cada hijo le ponemos dos hijos ficticios. A los que le falten 1 hijo se lo añadimos tambien ficticio
+
+
+
+    Expresiones sintáticas:
+
+        al ponerlas en inorden sale la expresión matemática.
+     
